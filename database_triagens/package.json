@@ -1,0 +1,17 @@
+{
+  "name": "database_triagens",
+  "version": "1.0.0",
+  "description": "MongoDB database container for patient triage records (patients, triage entries, metadata) with initialization and seed scripts",
+  "main": "scripts/init_db.js",
+  "type": "module",
+  "scripts": {
+    "init": "node ./scripts/init_db.js",
+    "seed": "node ./scripts/seed_db.js",
+    "reseed": "node ./scripts/seed_db.js --drop"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "mongodb": "^6.9.0",
+    "uuid": "^9.0.1"
+  }
+}
